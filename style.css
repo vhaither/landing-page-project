@@ -1,5 +1,6 @@
 body{
     min-height: 100vh;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,16 +8,37 @@ body{
 }
 
 .header{
-    width: 75% ;
+    width: 100%;
+    background-color:#1f2937;
 }
 
 .footer{
+    background-color:#1f2937;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    color: #e5e7eb; 
 }
 
 
 .header-top{
     display: flex;
     justify-content: space-between;
+    margin: 0 16.66%;
+    padding: 16px;
+}
+
+.header-top-left{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-top-right a{
+    font-size: 18px;
+    color: #e5e7eb; 
+    text-decoration: none;
+    margin: 8px;
 }
 
 .header-botton{
@@ -30,6 +52,24 @@ body{
 
 .header-botton-left{
     flex: 0 1 300px;
+}
+
+.header-botton-left h1{
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.header-botton-left p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.header-botton-left button{
+    background-color: #3882f6 ;
+    color: #f9faf8;
+    border-radius: 8px ;
+    padding: 5px 25px;
 }
 
 .header-botton-right{
@@ -48,6 +88,9 @@ body{
 
 .body h1{
     align-self: center;
+    font: 36px;
+    font-weight: 800;
+    color: #1f2937;
 }
 
 
@@ -64,18 +107,56 @@ body{
 }
 
 .quote{
-    width: 66.66%;
     align-self: center;
+    background-color: #e5e7eb;
+    padding: 32px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pplusspan{
+    width:50% ;
+}
+
+.quote p{
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quote span{
+    color: #1f2937;
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .signup{
     align-self: center;
     display: flex;
-    gap: 32px ;    
+    background-color: #3882f6 ;
+    border-radius: 8px;
+    padding: 20px 50px;
+    width: 66.66%;
+}
+
+.signup-left {
+    flex: 1 1 auto;
 }
 
 .signup-right{
+    flex: 0 0 auto;
     display: flex;
     align-items: center;
 }
 
+.signup-right button{
+    background-color: #3882f6 ;
+    color: #f9faf8;
+    border-radius: 8px;
+    border: 2px solid #f9faf8;
+    padding: 5px 25px;
+}
