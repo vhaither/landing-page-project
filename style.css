@@ -10,6 +10,9 @@ body{
 .header{
     width: 100%;
     background-color:#1f2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer{
@@ -23,9 +26,9 @@ body{
 
 
 .header-top{
+    width:75%;
     display: flex;
     justify-content: space-between;
-    margin: 0 16.66%;
     padding: 16px;
 }
 
@@ -97,13 +100,27 @@ body{
 .body .images{
     align-self: center;
     display: flex;
-    gap: 16px;
-    width: 66.66%;
+    justify-content: center;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
 }
 
-.image img{
-    max-width: 100%;
-    max-height: 100%;
+.imagePlacement{
+    width: 200px;
+    height: 200px;
+    border: 8px solid #3882f6;
+    flex: 0 0 auto;
+    border-radius: 16px;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+figcaption{
+    margin-top: 4px;
 }
 
 .quote{
@@ -139,13 +156,23 @@ body{
     display: flex;
     background-color: #3882f6 ;
     border-radius: 8px;
-    padding: 20px 50px;
+    padding: 20px 150px;
     width: 66.66%;
+    margin: 100px 0;
 }
 
 .signup-left {
     flex: 1 1 auto;
 }
+
+.signup-left h1{
+    color: #e5e7eb;
+}
+
+.signup-left p{
+    color: #e5e7eb;
+}
+
 
 .signup-right{
     flex: 0 0 auto;
